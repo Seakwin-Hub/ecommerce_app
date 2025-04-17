@@ -1,6 +1,10 @@
+import 'package:ecommerce_app/utils/app_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -9,12 +13,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+    return ScreenUtilInit(
+      minTextAdapt: true,
+      designSize: Size(390, 844),
+      child: GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: AppConstants.appName,
+
+        ///Navigate Without Context
+        navigatorKey: Get.key,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        ),
+        home: const Scaffold(),
       ),
-      home: const Scaffold(),
     );
   }
 }

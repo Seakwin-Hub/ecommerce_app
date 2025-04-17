@@ -1,25 +1,21 @@
 name: ecommerce_app
-description: "A new Flutter project."
+description: "Ecommerce App Project"
 
 publish_to: 'none' 
 
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.0
+  sdk: ">=3.0.6 <4.0.0"
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
+  iconsax: ^0.0.8
+  get: ^4.7.2
 
 dev_dependencies:
   flutter_test:
@@ -28,6 +24,20 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-
- 
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/language/
+    
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/font/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/font/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/font/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/font/Roboto-Black.ttf
+          weight: 900
+
