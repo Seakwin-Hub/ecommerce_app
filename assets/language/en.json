@@ -1,4 +1,22 @@
 {
     "sign_in" : "Sign In",
-    "sign_up" : "Sign Up"
+    "sign_up" : "Sign Up",
+    "on_boarding_title1" : "Choose your product",
+    "on_boarding_title2" : "Select Payment Method",
+    "on_boarding_title3" : "Deliver at your door step",
+    "on_boarding_subTitle1" : "Welcome to a world of Limitless Choices - Your Perfect Product Awaits!",
+    "on_boarding_subTitle2" : "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!",
+    "on_boarding_subTitle3" : "For Our Doorstep or Yours - Swift, Secure, and Contactless Delivery!",
+    "home_appbar_title" : "Good day for shopping",
+    "home_appbar_subTitle" : "Seak Win",
+    "ok" : "OK",
+    "password_required" : "Password is required.",
+    "password_must_6" : "Password must be at least 6 characters long.",
+    "password_upper" : "Password must contain at least one uppercase letter.",
+    "password_num" : "Password must contain at least one number",
+    "password_special_char" : "Password must contain at least one special character.",
+    "phone_require" : "Phone number is required.",
+    "invalid_phone" : "Invalid Phone number format (10 digits required).",
+    "connection_to_api_server_failed": "Connection to API server failed due to internet connection"
+
 }

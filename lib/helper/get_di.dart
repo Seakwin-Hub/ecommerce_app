@@ -1,17 +1,23 @@
 import 'dart:convert';
 
+import 'package:ecommerce_app/common/theme/controllers/theme_controller.dart';
 import 'package:ecommerce_app/features/localization/domain/models/language_model.dart';
 import 'package:ecommerce_app/utils/app_constants.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 Future<Map<String, Map<String, String>>> init() async {
   ///Core
+  final sharedPreference = await SharedPreferences.getInstance();
+  Get.lazyPut(() => sharedPreference);
 
   ///Repository Interface
 
   ///Service Interface
 
   ///Controller
+  Get.lazyPut(() => ThemeController(sharedPreferences: Get.find()));
 
   /// Retrieving localized data
   Map<String, Map<String, String>> languages = {};
