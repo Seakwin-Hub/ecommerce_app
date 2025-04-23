@@ -31,6 +31,9 @@ extension ColorResource {
 @available(iOS 11.0, macOS 10.7, tvOS 11.0, *)
 extension ImageResource {
 
+    /// The "LaunchBackground" asset catalog image resource.
+    static let launchBackground = ImageResource(name: "LaunchBackground", bundle: resourceBundle)
+
     /// The "LaunchImage" asset catalog image resource.
     static let launch = ImageResource(name: "LaunchImage", bundle: resourceBundle)
 
@@ -73,6 +76,15 @@ extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 @available(macCatalyst, unavailable)
 extension AppKit.NSImage {
 
+    /// The "LaunchBackground" asset catalog image.
+    static var launchBackground: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .launchBackground)
+#else
+        .init()
+#endif
+    }
+
     /// The "LaunchImage" asset catalog image.
     static var launch: AppKit.NSImage {
 #if !targetEnvironment(macCatalyst)
@@ -89,6 +101,15 @@ extension AppKit.NSImage {
 @available(iOS 11.0, tvOS 11.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIImage {
+
+    /// The "LaunchBackground" asset catalog image.
+    static var launchBackground: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .launchBackground)
+#else
+        .init()
+#endif
+    }
 
     /// The "LaunchImage" asset catalog image.
     static var launch: UIKit.UIImage {

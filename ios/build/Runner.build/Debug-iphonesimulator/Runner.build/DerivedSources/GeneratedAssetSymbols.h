@@ -6,6 +6,9 @@
 #define AC_SWIFT_PRIVATE
 #endif
 
+/// The "LaunchBackground" asset catalog image resource.
+static NSString * const ACImageNameLaunchBackground AC_SWIFT_PRIVATE = @"LaunchBackground";
+
 /// The "LaunchImage" asset catalog image resource.
 static NSString * const ACImageNameLaunchImage AC_SWIFT_PRIVATE = @"LaunchImage";
 

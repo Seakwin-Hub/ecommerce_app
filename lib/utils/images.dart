@@ -10,4 +10,9 @@ class Images {
   ///Logo
   static const String darkLogo = "assets/images/logo-dark.png";
   static const String lightLogo = "assets/images/logo-light.png";
+
+  ///Lottie - Json
+  static const String selectProduct = "assets/images/selected-product.json";
+  static const String selectPayment = "assets/images/select-payment.json";
+  static const String deliveryAnimate = "assets/images/delivery-lottie.json";
 }

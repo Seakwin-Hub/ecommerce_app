@@ -10,6 +10,16 @@
 			<key>catalogPath</key>
 			<string>/Users/chhimseakwin/Desktop/File/Mobile/ecommerce_app/ios/Runner/Assets.xcassets</string>
 			<key>objcSymbol</key>
+			<string>ACImageNameLaunchBackground</string>
+			<key>relativePath</key>
+			<string>./LaunchBackground.imageset</string>
+			<key>swiftSymbol</key>
+			<string>launchBackground</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/chhimseakwin/Desktop/File/Mobile/ecommerce_app/ios/Runner/Assets.xcassets</string>
+			<key>objcSymbol</key>
 			<string>ACImageNameLaunchImage</string>
 			<key>relativePath</key>
 			<string>./LaunchImage.imageset</string>

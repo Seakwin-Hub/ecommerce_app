@@ -17,6 +17,6 @@
     "password_special_char" : "Password must contain at least one special character.",
     "phone_require" : "Phone number is required.",
     "invalid_phone" : "Invalid Phone number format (10 digits required).",
-    "connection_to_api_server_failed": "Connection to API server failed due to internet connection"
-
+    "connection_to_api_server_failed": "Connection to API server failed due to internet connection",
+    "skip" : "Skip"
 }

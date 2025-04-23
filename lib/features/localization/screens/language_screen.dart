@@ -1,5 +1,7 @@
+import 'package:ecommerce_app/utils/images.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lottie/lottie.dart';
 
 class LanguageScreen extends StatelessWidget {
   const LanguageScreen({super.key});
@@ -10,12 +12,26 @@ class LanguageScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("data"),
       ),
-      body: Container(
-        height: 19,
-        color: Colors.black,
-        child: Text(
-          "sign_in".tr,
-          style: TextStyle().copyWith(color: Colors.red),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Lottie.asset(
+              Images.selectProduct,
+              width: 300.w,
+              height: 160.h,
+            ),
+            Lottie.asset(
+              Images.selectPayment,
+              width: 300.w,
+              height: 160.h,
+            ),
+            Lottie.asset(
+              Images.deliveryAnimate,
+              width: 300.w,
+              height: 160.h,
+            ),
+          ],
         ),
       ),
     );
